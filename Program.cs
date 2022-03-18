@@ -14,12 +14,39 @@ namespace Stack
             st.Push(56);
 
 
-            foreach (int ele in st)
+            foreach (int element in st)
             {
-                Console.WriteLine(ele);
+                Console.WriteLine(element);
             }
-            
-        
+            Console.WriteLine("----------");
+            Console.WriteLine("peek value is " + st.Peek());
+            Console.WriteLine("----------");
+            st.Pop();
+            foreach (int element in st)
+            {
+                Console.WriteLine(element);
+            }
+            Console.WriteLine("--------");
+
+            Console.WriteLine("peek value is " + st.Peek());
+            Console.WriteLine("----------");
+            st.Pop();
+            foreach (int element in st)
+            {
+                Console.WriteLine(element);
+            }
+            Console.WriteLine("--------");
+
+            Console.WriteLine("peek value is " + st.Peek());
+            Console.WriteLine("----------");
+            st.Pop();
+            foreach (int element in st)
+            {
+                Console.WriteLine(element);
+            }
+           
+
+
         }
     }
 }
