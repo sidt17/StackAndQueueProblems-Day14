@@ -7,44 +7,43 @@ namespace Stack
     {
         static void Main(string[] args)
         {
-            Stack<int> st = new Stack<int>();
+            Queue<int> queue = new Queue<int>();
 
-            st.Push(70);
-            st.Push(30);
-            st.Push(56);
+            queue.Enqueue(56);
+            queue.Enqueue(30);
+            queue.Enqueue(70);
 
 
-            foreach (int element in st)
+            foreach (int element in queue)
             {
                 Console.WriteLine(element);
             }
-            Console.WriteLine("----------");
-            Console.WriteLine("peek value is " + st.Peek());
-            Console.WriteLine("----------");
-            st.Pop();
-            foreach (int element in st)
-            {
-                Console.WriteLine(element);
-            }
-            Console.WriteLine("--------");
 
-            Console.WriteLine("peek value is " + st.Peek());
-            Console.WriteLine("----------");
-            st.Pop();
-            foreach (int element in st)
-            {
-                Console.WriteLine(element);
-            }
-            Console.WriteLine("--------");
+            
 
-            Console.WriteLine("peek value is " + st.Peek());
-            Console.WriteLine("----------");
-            st.Pop();
-            foreach (int element in st)
+            Console.WriteLine("--------------");
+            queue.Dequeue();
+            foreach (int element in queue)
             {
                 Console.WriteLine(element);
             }
-           
+          
+            Console.WriteLine("--------------");
+
+            queue.Dequeue();
+            foreach (int element in queue)
+            {
+                Console.WriteLine(element);
+            }
+
+            Console.WriteLine("--------------");
+
+            queue.Dequeue();
+            foreach (int element in queue)
+            {
+                Console.WriteLine(element);
+            }
+
 
 
         }
